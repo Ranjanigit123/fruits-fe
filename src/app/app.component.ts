@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
   }
 
   getRestaurants() {
-    this.http.get('http://localhost:4000/api/products').subscribe(
+    this.http.get('https://fruits-be.onrender.com/api/products').subscribe(
       (response: any) => {
         if (response.success) {
           this.restaurants = response.data;
