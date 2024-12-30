@@ -116,7 +116,7 @@ export class AppComponent implements OnInit {
     if (this.cartTotal > 0) {
       this.cartTotal -= price;
     } else if(this.cartTotal === 0) {
-      // Optionally handle negative total or alert user
+      // Optionally handle negative total or alert users
       alert("No Item")
       return;
     }
